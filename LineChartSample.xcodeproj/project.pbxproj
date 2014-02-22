@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B469F8B18B877F50095C418 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B469F8A18B877F50095C418 /* TestView.xib */; };
+		3B469F8E18B878BE0095C418 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B469F8D18B878BE0095C418 /* TestView.m */; };
+		3BA66D5C18B8609100EACEBE /* KJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA66D5B18B8609100EACEBE /* KJViewController.m */; };
+		3BA66D6018B8687D00EACEBE /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA66D5F18B8687D00EACEBE /* TestClass.m */; };
 		3BD19BE918B8376900788FE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD19BE818B8376900788FE2 /* Foundation.framework */; };
 		3BD19BEB18B8376900788FE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD19BEA18B8376900788FE2 /* CoreGraphics.framework */; };
 		3BD19BED18B8376900788FE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD19BEC18B8376900788FE2 /* UIKit.framework */; };
@@ -21,6 +25,9 @@
 		3BD19C0A18B8376900788FE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD19BEC18B8376900788FE2 /* UIKit.framework */; };
 		3BD19C1218B8376900788FE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BD19C1018B8376900788FE2 /* InfoPlist.strings */; };
 		3BD19C1418B8376900788FE2 /* LineChartSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD19C1318B8376900788FE2 /* LineChartSampleTests.m */; };
+		3BD19C2218B837B900788FE2 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD19C2118B837B900788FE2 /* Util.m */; };
+		3BD19C2718B837EB00788FE2 /* LineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BD19C2618B837EB00788FE2 /* LineChartView.xib */; };
+		3BD19C2A18B838C200788FE2 /* LineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD19C2918B838C200788FE2 /* LineChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B469F8A18B877F50095C418 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		3B469F8C18B878BE0095C418 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		3B469F8D18B878BE0095C418 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		3BA66D5A18B8609100EACEBE /* KJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJViewController.h; sourceTree = "<group>"; };
+		3BA66D5B18B8609100EACEBE /* KJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJViewController.m; sourceTree = "<group>"; };
+		3BA66D5D18B8676E00EACEBE /* KJCodeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCodeProtocol.h; sourceTree = "<group>"; };
+		3BA66D5E18B8687D00EACEBE /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		3BA66D5F18B8687D00EACEBE /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		3BD19BE518B8376900788FE2 /* LineChartSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineChartSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD19BE818B8376900788FE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3BD19BEA18B8376900788FE2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +68,11 @@
 		3BD19C0F18B8376900788FE2 /* LineChartSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LineChartSampleTests-Info.plist"; sourceTree = "<group>"; };
 		3BD19C1118B8376900788FE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BD19C1318B8376900788FE2 /* LineChartSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChartSampleTests.m; sourceTree = "<group>"; };
+		3BD19C2018B837B900788FE2 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		3BD19C2118B837B900788FE2 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		3BD19C2618B837EB00788FE2 /* LineChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
+		3BD19C2818B838C200788FE2 /* LineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartView.h; sourceTree = "<group>"; };
+		3BD19C2918B838C200788FE2 /* LineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +132,20 @@
 		3BD19BEE18B8376900788FE2 /* LineChartSample */ = {
 			isa = PBXGroup;
 			children = (
+				3BD19C1E18B837A500788FE2 /* common */,
+				3BD19C1F18B837A500788FE2 /* customView */,
 				3BD19BF718B8376900788FE2 /* AppDelegate.h */,
 				3BD19BF818B8376900788FE2 /* AppDelegate.m */,
+				3BA66D5D18B8676E00EACEBE /* KJCodeProtocol.h */,
 				3BD19BFA18B8376900788FE2 /* Main.storyboard */,
+				3BA66D5A18B8609100EACEBE /* KJViewController.h */,
+				3BA66D5B18B8609100EACEBE /* KJViewController.m */,
 				3BD19BFD18B8376900788FE2 /* ViewController.h */,
 				3BD19BFE18B8376900788FE2 /* ViewController.m */,
 				3BD19C0018B8376900788FE2 /* Images.xcassets */,
 				3BD19BEF18B8376900788FE2 /* Supporting Files */,
+				3BA66D5E18B8687D00EACEBE /* TestClass.h */,
+				3BA66D5F18B8687D00EACEBE /* TestClass.m */,
 			);
 			path = LineChartSample;
 			sourceTree = "<group>";
@@ -150,6 +177,28 @@
 				3BD19C1018B8376900788FE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BD19C1E18B837A500788FE2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3BD19C2018B837B900788FE2 /* Util.h */,
+				3BD19C2118B837B900788FE2 /* Util.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		3BD19C1F18B837A500788FE2 /* customView */ = {
+			isa = PBXGroup;
+			children = (
+				3BD19C2818B838C200788FE2 /* LineChartView.h */,
+				3BD19C2918B838C200788FE2 /* LineChartView.m */,
+				3BD19C2618B837EB00788FE2 /* LineChartView.xib */,
+				3B469F8A18B877F50095C418 /* TestView.xib */,
+				3B469F8C18B878BE0095C418 /* TestView.h */,
+				3B469F8D18B878BE0095C418 /* TestView.m */,
+			);
+			path = customView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +280,8 @@
 				3BD19C0118B8376900788FE2 /* Images.xcassets in Resources */,
 				3BD19BF318B8376900788FE2 /* InfoPlist.strings in Resources */,
 				3BD19BFC18B8376900788FE2 /* Main.storyboard in Resources */,
+				3B469F8B18B877F50095C418 /* TestView.xib in Resources */,
+				3BD19C2718B837EB00788FE2 /* LineChartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B469F8E18B878BE0095C418 /* TestView.m in Sources */,
 				3BD19BFF18B8376900788FE2 /* ViewController.m in Sources */,
+				3BD19C2A18B838C200788FE2 /* LineChartView.m in Sources */,
 				3BD19BF918B8376900788FE2 /* AppDelegate.m in Sources */,
+				3BA66D5C18B8609100EACEBE /* KJViewController.m in Sources */,
 				3BD19BF518B8376900788FE2 /* main.m in Sources */,
+				3BD19C2218B837B900788FE2 /* Util.m in Sources */,
+				3BA66D6018B8687D00EACEBE /* TestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +516,7 @@
 				3BD19C1918B8376900788FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BD19C1A18B8376900788FE2 /* Build configuration list for PBXNativeTarget "LineChartSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +525,7 @@
 				3BD19C1C18B8376900788FE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
