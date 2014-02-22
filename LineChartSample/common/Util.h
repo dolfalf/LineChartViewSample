@@ -10,12 +10,14 @@
 
 @interface Util : NSObject
 
-
+//メッセージと一緒に表示させるたい時には..
 +(void)myMethod:(NSString*)abc __attribute((deprecated("use myMethod: animated: method")));
 
+//新しく作成したメソッドこれを使いさせたい。
 +(void)myMethod:(NSString*)abc animated:animated;
 
-+(void)myMethod2:(NSString*)abc __deprecated;    //メッセージなしでdeprecated表示したい場合
+//メッセージなしでdeprecated表示したい場合
++(void)myMethod2:(NSString*)abc __deprecated;
 
 
 //프로퍼티도 같은 방식으로

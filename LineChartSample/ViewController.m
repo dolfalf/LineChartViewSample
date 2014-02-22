@@ -16,6 +16,8 @@
     
 }
 
+- (IBAction)buttonTounched:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -44,17 +46,33 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)lineChartPointCount {
-    return 60;
+#pragma mark - IBAction
+- (IBAction)buttonTounched:(id)sender {
+    NSLog(@"%s",__FUNCTION__);
+    [_lineChartView reloadLineChartView];
 }
 
-- (void)lineChartView:(LineChartView *)chartView color:(UIColor *)color count:(NSInteger)cnt {
-//    NSLog(@"%d",cnt );
-    chartView.cnt = 40;
-    chartView.color = [UIColor greenColor];
+#pragma mark - delegate methods
+- (void)lineChartViewPointDrawFinished:(LineChartView *)chartView {
+    NSLog(@"%s",__FUNCTION__);
     
 }
+
+- (NSInteger)lineChartPointCount {
+    NSLog(@"%s",__FUNCTION__);
+    //描画ポイントの数を設定
+    return 10;
+}
+
+- (UIColor *)lineChartPointColor {
+    //描画ポイント色指定
+    return [UIColor redColor];
+}
+
+//プロトコルによって実装するメソッド
 - (void)loadModel {
-    
+    NSLog(@"%s",__FUNCTION__);
 }
+
+
 @end

@@ -14,17 +14,27 @@
 
 @property (nonatomic) id<LineChartViewDelegate> delegate;
 
-@property (nonatomic,readonly) NSInteger cnt;
-@property (nonatomic, strong) UIColor *color;
+@property (nonatomic,readonly) NSInteger cnt;           //外部から変更できないようにreadonly
+@property (nonatomic, strong,readonly) UIColor *color;  //外部から変更できないようにreadonly
 
+//Xibを利用したインスタンス生成メソッド
 + (id)createView:(UIView *)baseView;
+
+//ビューの再ロード
+- (void)reloadLineChartView;
 
 @end
 
+//データのやり取りのためにプロトコルを作成
 @protocol LineChartViewDelegate <NSObject>
 
-@optional
-- (void)lineChartView:(LineChartView *)chartView color:(UIColor *)color count:(NSInteger)cnt;
+//値を受け取るためにデリゲートメソッドを作成
+
+//描画が終わったら通知するメソッド
+- (void)lineChartViewPointDrawFinished:(LineChartView *)chartView;
+
+//描画をするポイントの情報を委任する
 - (NSInteger)lineChartPointCount;
+- (UIColor *)lineChartPointColor;
 
 @end

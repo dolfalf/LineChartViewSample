@@ -12,5 +12,7 @@
 
 @interface ViewController : KJViewController <KJCodeProtocol>
 
-@property (nonatomic) NSInteger kjcodeValue;
+//プロトコルによって実装する
+@property (nonatomic) NSInteger index;
+
 @end

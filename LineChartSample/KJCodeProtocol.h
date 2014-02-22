@@ -10,8 +10,9 @@
 
 @protocol KJCodeProtocol <NSObject>
 
+//必ず実装するように定義
 @required
-@property (nonatomic) NSInteger kjcodeValue;
+@property (nonatomic) NSInteger index;
 - (void)loadModel;
 
 @end

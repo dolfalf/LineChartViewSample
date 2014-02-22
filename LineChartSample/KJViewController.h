@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "KJCodeProtocol.h"
 
+//viewControllerの親クラス
 @interface KJViewController : UIViewController
 
 @end

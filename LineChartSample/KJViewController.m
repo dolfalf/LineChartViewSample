@@ -7,7 +7,6 @@
 //
 
 #import "KJViewController.h"
-#import "TestClass.h"
 
 @interface KJViewController ()
 
@@ -28,10 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    
-    UITableView
-
     
 }
 
